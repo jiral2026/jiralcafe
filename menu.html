@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>BOB'S CAFÉ</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+
+            body {
+                width: 1920px;
+                background-color: #7b3f00;
+            }
+
+            h1 {
+                color:#F8F7de;
+                font-family: 'Poppins', sans-serif;
+                margin: 10px;
+                margin-left:20px;
+                font-size: 60px;
+            }
+
+            h2 {
+                font-family: 'karla', sans-serif;
+                margin: 15px;
+                font-size: 26px;
+            }
+
+            p {
+                font-family: 'Patrick Hand', cursive;
+                margin: 20px;
+                font-size: 23px;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #ffe79a;
+                border-radius: 20px;
+            }
+
+            ul li {
+                padding-top: 50px;
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+            }
+
+            ul li a {
+                display: block;
+                color: rgb(70, 26, 26);
+                text-align: center;
+                padding-left: 56px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+            ul li a:hover {
+                color:#ffffff;
+                transition-duration: .1s;
+            }
+
+            .zoom {
+                height: auto;
+            }
+
+            .zoom div {
+            transition: transform .5s ease;
+            }
+
+
+            .button a:visited {
+                color: white; 
+            }
+
+
+            .zoom:hover div {
+            transform: scale(1.1);
+            }
+
+            #header {
+                height: 100px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: 1100px;
+                width: 1920px;
+                background-image: url(https://img.freepik.com/premium-photo/aesthetic-bright-layout-made-cherry-plums-leaves-blueberry-isolated-black-wooden-surface-flat-lay-creative-composition-summer-food-healthy-diet-copyspace-advertisement_176532-5729.jpg?w=2000);
+                background-repeat: no-repeat;
+                background-size: 1920px 1200px;
+            }
+            #main2 {
+                height: 1100px;
+                width: 1920px;
+                background-image: url(https://img.freepik.com/premium-photo/aesthetic-bright-layout-made-cherry-plums-leaves-blueberry-isolated-black-wooden-surface-flat-lay-creative-composition-summer-food-healthy-diet-copyspace-advertisement_176532-5729.jpg?w=2000);
+                background-repeat: no-repeat;
+                background-size: 1920px 1200px;
+            }
+            #main3 {
+                height: 1100px;
+                width: 1920px;
+                background-image: url(https://img.freepik.com/premium-photo/aesthetic-bright-layout-made-cherry-plums-leaves-blueberry-isolated-black-wooden-surface-flat-lay-creative-composition-summer-food-healthy-diet-copyspace-advertisement_176532-5729.jpg?w=2000);
+                background-repeat: no-repeat;
+                background-size: 1920px 1200px;
+            }
+            #main4 {
+                height: 1100px;
+                width: 1920px;
+                background-image: url(https://img.freepik.com/premium-photo/aesthetic-bright-layout-made-cherry-plums-leaves-blueberry-isolated-black-wooden-surface-flat-lay-creative-composition-summer-food-healthy-diet-copyspace-advertisement_176532-5729.jpg?w=2000);
+                background-repeat: no-repeat;
+                background-size: 1920px 1200px;
+            }
+            #main5 {
+                height: 1100px;
+                width: 1920px;
+                background-image: url(https://img.freepik.com/premium-photo/aesthetic-bright-layout-made-cherry-plums-leaves-blueberry-isolated-black-wooden-surface-flat-lay-creative-composition-summer-food-healthy-diet-copyspace-advertisement_176532-5729.jpg?w=2000);
+                background-repeat: no-repeat;
+                background-size: 1920px 1200px;
+            }
+            
+            #menuitem {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem2 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem3 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem4 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem5 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem6 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem7 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem8 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem9 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem10 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem11 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem12 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem13 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem14 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem15 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem16 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem17 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem18 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem19 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem20 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem21 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem22 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem23 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem24 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+            #menuitem25 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }            #menuitem26 {
+                width: 430px;
+                height: 430px;
+                background-color: #f8d9a7;
+                border-radius: 10px;
+                float:left;
+                margin: 40px;
+                margin-right: 60px;
+            }
+
+            #rightside {
+                float: right;
+                height: 1100px;
+                width: 1620px;
+            }
+
+            #leftside {
+                float:left;
+                height: 1100px;
+                width:300px;
+                background-color:#ffe79a;
+            }
+
+            #est {
+                font-family: 'Patrick Hand', cursive;
+                font-size: 20px;
+                float: right;  
+            }
+
+            .hline { 
+                width:100%; 
+                height:3px; 
+                background: #fff;
+            }
+
+
+            #hnav {
+                height: 400px;
+                width: 300px; 
+                padding-bottom: 170px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div id="header">
+        <h1><img src="https://media2.giphy.com/media/AFmZwgpOXOqWwtcVve/giphy.gif?cid=6c09b952c45d4f6fed9c0a06af7a23e2c62f822565cc898b&rid=giphy.gif&ct=s" alt="smiley face gif"
+            style="width:50px;"> BOB'S CAFÉ</h1>
+    </div>
+    <div id="main">
+        <div id="leftside">
+            <img src="https://media3.giphy.com/media/9WfkIiuzx3dWcTVfRy/giphy.gif" alt="giant yellow smiley face" 
+            style="width:230px; padding-top: 100px; margin-left: auto; margin-right:auto; display: block;">
+            <div id="hnav">
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                  </ul>
+            </div>
+            <p><span style="color: #ffffff;">2454 Sto Entierro St, Angeles, 2009 Pampanga<br><br>contact +63 (915) 705 6092 for inquiries</span></p>
+        </div>
+        <div id="rightside">
+            <h1>  APPETIZERS</h1>
+            <div class="zoom">
+            <div id="menuitem">
+            <h2>SNACK-WICH (6 PCS.) • ₱80</h2>
+            <img src="https://www.appetizeraddiction.com/wp-content/uploads/2020/01/mini-sandwiches-for-party.jpg" alt="mini sandwiches"
+            style="padding-left: 10px; width:240px; height:240px;">
+            <P>- your usual sandwiches but bite-sized and perfect for a quick snack break</P>
+            </div>
+        </div>
+        <div class="zoom">
+            <div id="menuitem2">
+            <h2>DO THE SALSA! • ₱40</h2>
+            <img src="https://aseasyasapplepie.com/wp-content/uploads/2015/06/easy-homemade-restaurant-style-salsa1.jpg" alt="chips and salsa"
+            style="padding-left: 10px; width:240px; height:240px;">
+            <p>- delicious tangy and sweet salsa paired with crispy and salty chips<br>- also pefect for a quick snack break!</p>
+            </div>
+        </div>
+        <div class="zoom">
+            <div id="menuitem3">
+                <h2>CHA CHA SLIDE! (4 PCS.) • ₱80</h2>
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Parmesan-Slider-Bake_EXPS_MTCBBZ17_204498_D03_01_3b-4.jpg?w=1200" alt="chicken-parmesan sliders"
+                style="padding-left: 10px; width:240px; height:240px;">
+                <p>- BEST SELLER! <br>- stuffed with parmesan and chicken, a finger food you won't regret getting</p>
+            </div>
+        </div>
+        <div class="zoom">
+            <div id="menuitem4">
+                <h2>CU-CHERRY RED DRESS (15 PCS.) • ₱70</h2>
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps37052_MC163887D03_25_5b_WEB-2.jpg?resize=1024,1024" alt="cucumber-stuffed cherry tomatoes"
+                style="padding-left: 10px; width:240px; height:240px;">
+                <p>- an uncommon but delicious combo of cucumbers, ranch, and cherry tomatoes</p>
+            </div>
+        </div>
+        </div>
+</div>
+<div id="main2">
+    <h1>  MEALS (SERVING FOR 1)</h1>
+    <div class="zoom">
+    <div id="menuitem5">
+    <h2>PESTY PESTO • ₱80</h2>
+    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/9/1/0/FNK_Penne-with-Pesto_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371600807071.jpeg" alt="pesto pasta"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <P>- regular pesto but BETTER</P>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem6">
+    <h2>FELIZ PENNES • ₱90</h2>
+    <img src="https://static.toiimg.com/thumb/84784534.cms?imgsize=468021&width=800&height=800" alt="tomato penne sauce pasta"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <p>- tomato sauce penne pasta with a side of garlic bread</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem7">
+        <h2>HENGBOGHADA SALADA • ₱100</h2>
+        <img src="https://www.seriouseats.com/thmb/Fi_FEyVa3_-_uzfXh6OdLrzal2M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-best-caesar-salad-recipe-06-40e70f549ba2489db09355abd62f79a9.jpg" alt="caesar salads"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- caesar salad with fresly-picked ingredients that's drenched in delicious sauce</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem8">
+        <h2>GREEK ONNELIK • ₱110</h2>
+        <img src="https://www.simplyrecipes.com/thmb/hcdnhU89fQgsmMkeppMwHx4TKnk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2011__08__dads-greek-salad-horiz-a-1600-bc71b85bc907414a9bb3179a923b58fc.jpg" alt="greek salad"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- Flavorful salad that is different from your usual greens and veggies</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem9">
+        <h2>HELLO, BAKED POTATO! • ₱110</h2>
+        <img src="https://iwashyoudry.com/wp-content/uploads/2016/09/Loaded-Baked-Potato-Soup-5.jpg" alt="baked potato soup"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- BESTSELLER! <BR>- hot, baked potato soup, perfect for a cozy rainy day</p>
+    </div>
+</div>
+</div>
+<div id="main3">
+    <h1>CAFFEINATED DRINKS</h1>
+    <div class="zoom">
+    <div id="menuitem10">
+    <h2>CREAMY OREO • ₱80/100</h2>
+    <img src="https://insidebrucrewlife.com/wp-content/uploads/2011/07/Mocha-Oreo-Milkshake-redo-1-1-480x480.jpg" alt="oreo-coffee beverage"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <P>- for those with a sweeter tooth who still want a boost of energy throughout their day</P>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem11">
+    <h2>CAPTIONCINO • ₱65</h2>
+    <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" alt="cappucino"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <p>- classic cappucino to get that blast of energy</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem12">
+        <h2>CHILLY CARAMACCHIATO • ₱80/100</h2>
+        <img src="https://www.nescafe.com/sg/sites/default/files/caramel-macchiato-recipe-card-grid-view-desktop.jpg" alt="caramal macchiato"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- cold, sweet, and tasty caramel macchiato perfect for hot, stressful days</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem13">
+        <h2>COMBATCHA FRAPPE • ₱90/110</h2>
+        <img src="https://lzd-img-global.slatic.net/g/p/7b55ae612347701315afbf04f077a9ce.jpg_720x720q80.jpg_.webp" alt="matcha frappe"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- bittersweet matcha frappe, earthy and sweet tasting</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem14">
+        <h2>STRAWBERRIES N' CREAM • ₱90/110</h2>
+        <img src="https://coffeeaffection.com/wp-content/uploads/2021/05/iced-strawberry-latte.jpg" alt="iced strawberry latte"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- BESTSELLER! <BR>- iced strawberry latte, sweet and mouthwatering!</p>
+    </div>
+</div>
+</div>
+<div id="main4">
+    <h1>NON-CAFFEINATED DRINKS</h1>
+    <div class="zoom">
+    <div id="menuitem15">
+    <h2>BARBIE'S LEMONADE • ₱65</h2>
+    <img src="http://www.prettymyparty.com/wp-content/uploads/2017/05/lemonade-1.jpg" alt="pink lemonade"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <P>- refreshing and aesthetically-pleasing, pink lemonade to help refresh yourself during hot summer days</P>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem16">
+    <h2>MG BOBA SHAKE • ₱90</h2>
+    <img src="https://bxtraoutlet.delivery/wp-content/uploads/2020/07/Travel-and-Tea-Fresh-Fruit-Shakes.jpg" alt="mango graham boba shake"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <p>- a shake and boba tea mixed together! containing the best pair, graham and mangoes</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem17">
+        <h2>ICED TEA • ₱50</h2>
+        <img src="https://images.squarespace-cdn.com/content/v1/56ee04177c65e44921b2e2ef/1623435590955-RPC9XEFM1WPTG4VZKIK6/iced+tea-2.jpg?format=750w" alt="iced tea"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- sweet and refreshing iced tea topped with a mint to complete your day</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem18">
+        <h2>MARSHALL'S HOT CHOCOLATE • ₱60</h2>
+        <img src="https://i0.wp.com/sweetlycakes.com/wp-content/uploads/2021/12/chocolatviennois-11blog.jpg?resize=720%2C1080&ssl=1" alt="hot chocolate"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- perfect for the holiday season, topped with fluffy tiny marshmallows and a sift of cinnamon</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem19">
+        <h2>TANGY ORENJI JUICE • ₱60</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxbriE1q6GhHnD1FCwfeiOYXPlRVK0zusWti8Pkb0jsVW7F9YS6mPeIXSQMmraXFbFck&usqp=CAU" alt="orange juice"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- tangy, freshly-squeezed orange juice for summer days</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem20">
+        <h2>BLUEBERRIES N' CREAM • ₱90</h2>
+        <img src="https://www.calgiant.com/wp-content/uploads/2021/12/home-circle-pic-lg-blueberry-cheesecake-smoothie.jpg" alt="blueberry cheesecake milkshake"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- your favorite kind of cheesecake made into a milkshake (blueberry cheesecake of course)</p>
+    </div>
+</div>
+</div>
+<div id="main5">
+    <h1>DESSERTS</h1>
+    <div class="zoom">
+    <div id="menuitem21">
+    <h2>STRAWVERRY SHORTCAKE • ₱100/SLICE</h2>
+    <img src="https://i8b2m3d9.stackpathcdn.com/wp-content/uploads/2020/08/Strawberry_Shortcake_5140sq.jpg" alt="strawberry shortcake"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <P>- creamy and sweet strawberry shortcake, topped with whipcream and strawberries</P>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem22">
+    <h2>CHOCO CUPCAKE • ₱20</h2>
+    <img src="https://handletheheat.com/wp-content/uploads/2016/02/best-chocolate-cupcakes-recipe-SQUARE.jpg" alt="chocolate cupcake"
+    style="padding-left: 10px; width:240px; height:240px;">
+    <p>- choco-filled cupcake topped with chocolate everything!</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem23">
+        <h2>THICKEWY COOKIE • ₱20</h2>
+        <img src="https://www.livewellbakeoften.com/wp-content/uploads/2017/02/Chocolate-Chip-Cookies-9.jpg" alt="chocolate chip cookie"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- a thick chocolate-chip cookie with massive chunks of chocolate baked inside</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem24">
+        <h2>BLACK FOREST • ₱90/SLICE</h2>
+        <img src="https://preppykitchen.com/wp-content/uploads/2021/07/Black-forest-cake-Recipe-n-500x500.jpg" alt="black forest"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- one of the classic cake flavors, black forest, a chocolate cake with hints of cherry</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem25">
+        <h2>CARAMEL FUDGE • ₱15</h2>
+        <img src="https://celebratingsweets.com/wp-content/uploads/2020/02/Caramel-Brownies-1-3.jpg" alt="caramel fudgey brownies"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- chocolate brownies filled with caramel fudge, with a light, thin, and crispy layer on top</p>
+    </div>
+</div>
+<div class="zoom">
+    <div id="menuitem26">
+        <h2>GLOSSY GLAZED DONUTS • ₱30</h2>
+        <img src="https://www.kitchenathoskins.com/wp-content/uploads/2018/05/super-soft-glazed-doughnuts-8-yum.jpg" alt="glazed donuts"
+        style="padding-left: 10px; width:240px; height:240px;">
+        <p>- fluffy, glazed and sweet donuts, a classic and original flavor everyone loves</p>
+    </div>
+</div>
+</div>
+    </body>
+</html>

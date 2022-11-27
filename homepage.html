@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">    
+        <title>BOB'S CAFÉ</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+
+            body {
+                width: 1920px;
+                background-color: #7b3f00;
+            }
+
+            h1 {
+                color:#F8F7de;
+                font-family: 'Poppins', sans-serif;
+                margin: 10px;
+                font-size: 60px;
+            }
+
+            h2 {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 20px;
+            }
+
+            p {
+                font-family: 'Patrick Hand', cursive;
+                margin: 20px;
+                font-size: 25px;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #ffe79a;
+                border-radius: 20px;
+            }
+
+            ul li {
+                padding-top: 50px;
+                display: inline;
+                float: left;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 30px;
+            }
+
+            ul li a {
+                display: block;
+                color: rgb(70, 26, 26);
+                text-align: center;
+                padding-left: 56px;
+                padding-right: 96px;
+                text-decoration: none;
+                transition-duration: .4s;
+            }
+
+            ul li a:hover {
+                color:#ffffff;
+                transition-duration: .1s;
+            }
+
+            .zoom {
+                height: auto;
+            }
+
+            .zoom img {
+            transition: transform .5s ease;
+            }
+
+
+            .button a:visited {
+                color: white; 
+            }
+
+
+            .zoom:hover img {
+            transform: scale(1.2);
+            }
+
+            #header {
+                height: 100px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                width: 1910px;
+            }
+            #pagetitle {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 32pt;
+                color: rgb(64, 64, 64);
+                text-align: center;
+                padding: 60px;
+            }
+            
+            #main {
+                height: 1100px;
+                width: 1920px;
+                background-image: url(https://www.victoriashighcountry.com.au/wp-content/uploads/sites/65/atdw-AU0046000-59939bc523b82e36477f6435.jpg);
+                background-repeat: no-repeat;
+                background-size: 1920px 1700px;
+            }
+
+            #leftside {
+                float:left;
+                height: 1100px;
+                width:300px;
+                background-color:#ffe79a;
+            }
+
+            #rightside {
+                float: right;
+                height: 1100px;
+                width: 700px;
+                background-color:#adcad6;
+                opacity: 0.8;
+            }
+
+            #welcome {
+                height: 500px;
+                width: 500px;
+                margin-left: 1300px;
+                padding-top: 120px;
+                position: absolute;
+                float: right;
+            }
+
+            #est {
+                font-family: 'Patrick Hand', cursive;
+                font-size: 20px;
+                float: right;  
+            }
+
+            .hline { 
+                width:100%; 
+                height:3px; 
+                background: #fff;
+            }
+
+
+            #hnav {
+                height: 400px;
+                width: 300px; 
+                padding-bottom: 170px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div id="header">
+        <h1><img src="https://media2.giphy.com/media/AFmZwgpOXOqWwtcVve/giphy.gif?cid=6c09b952c45d4f6fed9c0a06af7a23e2c62f822565cc898b&rid=giphy.gif&ct=s" alt="smiley face gif"
+            style="width:50px;"> BOB'S CAFÉ</h1>
+    </div>
+    <div id="main">
+        <div id="leftside">
+            <img src="https://media3.giphy.com/media/9WfkIiuzx3dWcTVfRy/giphy.gif" alt="giant yellow smiley face" 
+            style="width:230px; padding-top: 100px; margin-left: auto; margin-right:auto; display: block;">
+            <div id="hnav">
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                  </ul>
+            </div>
+            <p><span style="color: #ffffff;">2454 Sto Entierro St, Angeles, 2009 Pampanga<br><br>contact +63 (915) 705 6092 for inquiries</span></p>
+        </div>
+        <div id="rightside">
+        </div>
+        <div id ="welcome">
+            <h1><span style="color: #ffffff; font-size:20px;">BOB'S CAFÉ —</span><br><br>
+            <span style ="color: #ffffff; font-family: 'Libre Baskerville', serif;">Welcome to our café</span></h1>
+            <p> <span style="color: #ffffff;">Welcome to our café! A small business owned by one man, BOB. The aim of this café is to find a nice, bright, and happy environment for people to rest, work, or study in. :) Or just a place to hang out with your friends.</span><br><br><br></p>
+            <div class ="hline"></div>
+            <p> <span style="color: #ffffff; font-family: 'Patrick Hand', cursive; font-size: 25px;"><br>WE ARE OPEN MONDAYS TO SATURDAYS <br>24 HOURS!</span><img src="https://i.pinimg.com/originals/3e/8e/8d/3e8e8df2fbdf927a6870b75ff3690d9d.gif" alt="ticking clock" style=" width:200px; margin-left: 400px;"></p>
+        </div>
+</div>
+    </body>
+</html>
